@@ -14,8 +14,7 @@ import com.devsuperior.dsmeta.repositories.SaleRepository;
 
 @Service
 public class SaleService {
-	@Autowired
-	
+	@Autowired	
 	private SaleRepository repository;
 	
 	public Page<Sale> findSales(String minDate, String maxDate,Pageable pageable) {
